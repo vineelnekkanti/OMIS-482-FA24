@@ -12,7 +12,7 @@ Download and install the preview build of RStudio: <https://posit.co/download/rs
 
 | Package | Source                                                  |
 |---------|---------------------------------------------------------|
-| tidyr   | [dplyr.tidyverse.org](https://dplyr.tidyverse.org/)     |
+| dplyr   | [dplyr.tidyverse.org](https://dplyr.tidyverse.org/)     |
 | ggplot2 | [ggplot2.tidyverse.org](https://ggplot2.tidyverse.org/) |
 
 ## Cheat Sheets

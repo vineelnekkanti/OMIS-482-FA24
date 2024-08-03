@@ -1,8 +1,14 @@
 ---
-title: "Course overview"
+title: "OMIS-482: Predictive Business Analytics With Machine Learning"
 ---
 
-OMIS-482 Predictive Business Analytics Machine Learning: THE CONTENT ABOUT THE COURSE GOES HERE
+## Course Description
+
+Study of advanced topics in predictive business analytics. Topics include data manipulations, data visualizations, and data modeling. Emphasis is on using and mastering powerful predictive analytics software such as R. 
+
+## Intended Learning Outcomes
+ 
+Students enrolled in this class are expected to learn and efficiently code without supervision. Moreover, they will learn how to apply predictive modelling techniques with machine learning on case studies to see the important real-world implications of predictive analytics in business.
 
 ## Class Details
 

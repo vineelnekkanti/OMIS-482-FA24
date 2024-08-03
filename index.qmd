@@ -15,7 +15,11 @@ He also co-hosts The Gateway podcast, launched in 2021, aimed at exposing studen
 
 ## Teaching Assistant
 
-**Venkata Surya Vineel Nekkanti**
+![](images/nvsv.jpg){width="220" height="220" style="float:right;padding: 0 0 0 10px;" fig-alt="Course TA"}
+
+**Venkata Surya Vineel Nekkanti** - Venkata (a.k.a. Vineel) is currently pursuing a graduate degree in Management Information Systems at Northern Illinois University. With five years of experience, he has held various roles focused on process improvements through data analysis and leveraging DevOps technologies within the BFSI sector in the NAM region. He has a strong interest in the intersection where business meets technology. 
+
+Beyond his academic pursuits, he is a devoted Sci-Fi enthusiast, enjoying both books and movies in the genre, besides George R.R. Martin's world of fantasy. He also loves to play badminton.
 
 ## Office Hours
 

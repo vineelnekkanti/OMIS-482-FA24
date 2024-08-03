@@ -31,6 +31,8 @@ website:
           text: Dr.B's Leaderboard
         - href: useful-links.qmd
           text: Useful Links
+        - href: grade-calculator.qmd
+          text: Grade Calculator
       - section: "Course Materials"
         contents:
         - href: in_class.qmd

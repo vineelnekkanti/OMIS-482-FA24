@@ -2,9 +2,9 @@
   {
     "objectID": "course-overview.html",
     "href": "course-overview.html",
-    "title": "Course overview",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
     "section": "",
-    "text": "OMIS-482 Predictive Business Analytics Machine Learning: THE CONTENT ABOUT THE COURSE GOES HERE",
+    "text": "Study of advanced topics in predictive business analytics. Topics include data manipulations, data visualizations, and data modeling. Emphasis is on using and mastering powerful predictive analytics software such as R.",
     "crumbs": [
       "Course Overview",
       "Course Overview"
@@ -13,7 +13,7 @@
   {
     "objectID": "course-overview.html#class-details",
     "href": "course-overview.html#class-details",
-    "title": "Course overview",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
     "section": "Class Details",
     "text": "Class Details\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nWeek’s First Class\nBarsema Hall 333\nTuesday 9:30 - 10:45 pm\n\n\nWeek’s Second Class\nBarsema Hall 333\nThursday 9:30 - 10:45 pm",
     "crumbs": [
@@ -48,7 +48,7 @@
     "href": "index.html#teaching-assistant",
     "title": "Faculty",
     "section": "Teaching Assistant",
-    "text": "Teaching Assistant\nVenkata Surya Vineel Nekkanti",
+    "text": "Teaching Assistant\n\nVenkata Surya Vineel Nekkanti - Venkata (a.k.a. Vineel) is currently pursuing a graduate degree in Management Information Systems at Northern Illinois University. With five years of experience, he has held various roles focused on process improvements through data analysis and leveraging DevOps technologies within the BFSI sector in the NAM region. He has a strong interest in the intersection where business meets technology.\nBeyond his academic pursuits, he is a devoted Sci-Fi enthusiast, enjoying both books and movies in the genre, besides George R.R. Martin’s world of fantasy. He also loves to play badminton.",
     "crumbs": [
       "Course Overview",
       "Faculty"
@@ -136,7 +136,7 @@
     "href": "useful-links.html#about-r-packages",
     "title": "Useful links",
     "section": "About R Packages",
-    "text": "About R Packages\n\n\n\nPackage\nSource\n\n\n\n\ntidyr\ndplyr.tidyverse.org\n\n\nggplot2\nggplot2.tidyverse.org",
+    "text": "About R Packages\n\n\n\nPackage\nSource\n\n\n\n\ndplyr\ndplyr.tidyverse.org\n\n\nggplot2\nggplot2.tidyverse.org",
     "crumbs": [
       "Course Overview",
       "Useful Links"
@@ -195,6 +195,39 @@
     "crumbs": [
       "Course Materials",
       "In-class & Weekly"
+    ]
+  },
+  {
+    "objectID": "grade-calculator.html",
+    "href": "grade-calculator.html",
+    "title": "Grade Calculator",
+    "section": "",
+    "text": "#| standalone: true\n#| viewerHeight: 600\n\nlibrary(shiny)\nlibrary(bslib)\n\n# Define UI for the application\nui &lt;- fluidPage(\n  titlePanel(\"Welcome to Grade Calculator\"),\n  p(\"This will help you project your final grade based on your current/predicted scores.\"),\n  sidebarLayout(\n    sidebarPanel(\n      h4(\"Enter your grades (between 0 and 100):\"),\n      fluidRow(\n        column(6, numericInput(\"grade1\", \"Practice 1:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade2\", \"RStudio Skill Test 1:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade3\", \"RStudio Skill Test 2:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade4\", \"Exam 1:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade5\", \"Practice 2:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade6\", \"Exam 2:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade7\", \"RStudio Skill Test 3:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade8\", \"Final Exam:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade9\", \"Participation:\", value = 85, min = 0, max = 100, step = 1))\n      )\n    ),\n    mainPanel(\n      h3(\"Your Results\"),\n      h4(\"Based on the scores you entered, your Final Grade is:\"),\n      uiOutput(\"finalGrade\"),\n      h4(\"Based on the scores you entered, your Letter Grade is:\"),\n      uiOutput(\"letterGrade\"),\n      h4(\"Feedback:\"),\n      uiOutput(\"feedback\")\n    )\n  )\n)\n\n# Define server logic for the application\nserver &lt;- function(input, output, session) {\n  # Reactive expression to calculate the final grade\n  finalGrade &lt;- reactive({\n    # Weightages for the grades\n    weightages &lt;- c(0.05, 0.10, 0.10, 0.12, 0.05, 0.15, 0.15, 0.18, 0.10)\n    \n    # Ensure all inputs are within range\n    grades &lt;- c(input$grade1, input$grade2, input$grade3, input$grade4, input$grade5,\n                input$grade6, input$grade7, input$grade8, input$grade9)\n    grades &lt;- pmax(pmin(grades, 100), 0)\n    \n    # Calculate the final grade\n    grade &lt;- sum(grades * weightages)\n    \n    # Return the final grade rounded to two decimal places\n    round(grade, 2)\n  })\n  \n  output$finalGrade &lt;- renderUI({\n    grade &lt;- finalGrade()\n    if (grade &gt;= 92) {\n      span(grade, style = \"color: green; font-size: 24px;\")\n    } else if (grade &gt;= 89.5) {\n      span(grade, style = \"color: lightgreen; font-size: 24px;\")\n    } else if (grade &gt;= 87) {\n      span(grade, style = \"color: yellowgreen; font-size: 24px;\")\n    } else if (grade &gt;= 82) {\n      span(grade, style = \"color: pink; font-size: 24px;\")\n    } else if (grade &gt;= 79.5) {\n      span(grade, style = \"color: orange; font-size: 24px;\")\n    } else if (grade &gt;= 77) {\n      span(grade, style = \"color: orangered; font-size: 24px;\")\n    } else if (grade &gt;= 69.5) {\n      span(grade, style = \"color: red; font-size: 24px;\")\n    } else if (grade &gt;= 59.5) {\n      span(grade, style = \"color: darkred; font-size: 24px;\")\n    } else {\n      span(grade, style = \"color: darkred; font-size: 24px;\")\n    }\n  })\n  \n  # Determine the letter grade based on the final grade\n  output$letterGrade &lt;- renderUI({\n    grade &lt;- finalGrade()\n    \n    if (grade &gt;= 92) {\n      span(\"A\", style = \"color: green; font-size: 24px;\")\n    } else if (grade &gt;= 89.5) {\n      span(\"A-\", style = \"color: lightgreen; font-size: 24px;\")\n    } else if (grade &gt;= 87) {\n      span(\"B+\", style = \"color: yellowgreen; font-size: 24px;\")\n    } else if (grade &gt;= 82) {\n      span(\"B\", style = \"color: pink; font-size: 24px;\")\n    } else if (grade &gt;= 79.5) {\n      span(\"B-\", style = \"color: orange; font-size: 24px;\")\n    } else if (grade &gt;= 77) {\n      span(\"C+\", style = \"color: orangered; font-size: 24px;\")\n    } else if (grade &gt;= 69.5) {\n      span(\"C\", style = \"color: red; font-size: 24px;\")\n    } else if (grade &gt;= 59.5) {\n      span(\"D\", style = \"color: darkred; font-size: 24px;\")\n    } else {\n      span(\"F\", style = \"color: darkred; font-size: 24px;\")\n    }\n  })\n\n  # Provide feedback based on the final grade\n  output$feedback &lt;- renderUI({\n    grade &lt;- finalGrade()\n    \n    if (grade &gt;= 92) {\n      span(\"Good job! Keep it up.\", style = \"color: green; font-size: 20px;\")\n    } else if (grade &gt;= 89.5) {\n      span(\"You are almost there! Great effort.\", style = \"color: lightgreen; font-size: 20px;\")\n    } else if (grade &gt;= 87) {\n      span(\"Well done! You’re on the right track.\", style = \"color: yellowgreen; font-size: 20px;\")\n    } else if (grade &gt;= 82) {\n      span(\"Good work! Continue to improve.\", style = \"color: pink; font-size: 20px;\")\n    } else if (grade &gt;= 79.5) {\n      span(\"You’re doing well, but there’s room for improvement.\", style = \"color: orange; font-size: 20px;\")\n    } else if (grade &gt;= 77) {\n      span(\"Keep trying, you can do better.\", style = \"color: orangered; font-size: 20px;\")\n    } else if (grade &gt;= 69.5) {\n      span(\"You’re making progress, but consider extra help.\", style = \"color: red; font-size: 20px;\")\n    } else if (grade &gt;= 59.5) {\n      span(\"You need to improve significantly.\", style = \"color: darkred; font-size: 20px;\")\n    } else {\n      span(\"Failing grade. Seek additional support.\", style = \"color: darkred; font-size: 20px;\")\n    }\n  })\n}\n\n# Run the application \nshinyApp(ui = ui, server = server)",
+    "crumbs": [
+      "Course Overview",
+      "Grade Calculator"
+    ]
+  },
+  {
+    "objectID": "course-overview.html#course-description",
+    "href": "course-overview.html#course-description",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
+    "section": "",
+    "text": "Study of advanced topics in predictive business analytics. Topics include data manipulations, data visualizations, and data modeling. Emphasis is on using and mastering powerful predictive analytics software such as R.",
+    "crumbs": [
+      "Course Overview",
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "course-overview.html#intended-learning-outcomes",
+    "href": "course-overview.html#intended-learning-outcomes",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
+    "section": "Intended Learning Outcomes",
+    "text": "Intended Learning Outcomes\nStudents enrolled in this class are expected to learn and efficiently code without supervision. Moreover, they will learn how to apply predictive modelling techniques with machine learning on case studies to see the important real-world implications of predictive analytics in business.",
+    "crumbs": [
+      "Course Overview",
+      "Course Overview"
     ]
   }
 ]

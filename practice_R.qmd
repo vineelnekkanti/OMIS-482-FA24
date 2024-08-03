@@ -27,7 +27,7 @@ library(tidyverse)
 The code on this page runs server-less. No code will be saved. Make sure to save your work some where else or you can even download your work by clicking on `View R History` on the top right corner. 
 
 :::
-# Maniupulations
+# Manipulations
 
 For example: Print the `starwars` dataset.
 ```{webr-r}
