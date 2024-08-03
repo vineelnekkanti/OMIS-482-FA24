@@ -10,6 +10,7 @@ filters:
 #| viewerHeight: 600
 
 library(shiny)
+library(shinylive)
 library(bslib)
 
 # Define UI for the application
