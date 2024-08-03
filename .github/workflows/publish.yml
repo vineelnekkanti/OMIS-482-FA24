@@ -23,6 +23,8 @@ jobs:
           r-version: '4.4.0'
 
       - name: Install R Dependencies
+        run: |
+          Rscript -e "if (!require('shinylive')) install.packages('shinylive', repos = 'http://cran.us.r-project.org')"
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1

@@ -62,6 +62,3 @@ execute:
   freeze: auto
 
 editor: visual
-
-extensions:
-  - quarto-ext/shinylive
