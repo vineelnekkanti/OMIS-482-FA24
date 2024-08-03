@@ -57,6 +57,11 @@ format:
     css: styles.css
   
 execute:
+  before: |
+    Rscript -e "if (!require('shinylive')) install.packages('shinylive', repos = 'http://cran.us.r-project.org')"
   freeze: auto
 
 editor: visual
+
+extensions:
+  - quarto-ext/shinylive
