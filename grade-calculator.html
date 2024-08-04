@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>OMIS-482: Predictive Business Analytics With Machine Learning – OMIS-681</title>
+<title>OMIS-681 - Grade Calculator</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,7 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./index.html" rel="next">
+<link href="./in_class.html" rel="next">
+<link href="./useful-links.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,6 +42,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<meta name="shinylive:serviceworker_dir" content=".">
+<script src="site_libs/quarto-contrib/shinylive-0.5.0/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="site_libs/quarto-contrib/shinylive-0.5.0/shinylive/run-python-blocks.js" type="module"></script>
+<link href="site_libs/quarto-contrib/shinylive-0.5.0/shinylive/shinylive.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -79,13 +85,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course-overview.html">Course Overview</a></li><li class="breadcrumb-item"><a href="./course-overview.html">Course Overview</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course-overview.html">Course Overview</a></li><li class="breadcrumb-item"><a href="./grade-calculator.html">Grade Calculator</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -113,16 +119,16 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
  <span class="menu-text">Course Overview</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-overview.html" class="sidebar-item-text sidebar-link active">
+  <a href="./course-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Overview</span></a>
   </div>
 </li>
@@ -134,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./files/OMIS482_SyllabusSpring2024_BiagioPalese_03_29.pdf" class="sidebar-item-text sidebar-link" target="_blank">
+  <a href="./files/OMIS482_SyllabusSpring2024_BiagioPalese_03_29.pdf" class="sidebar-item-text sidebar-link" target="&quot;_blank&quot;">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
@@ -150,13 +156,19 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Useful Links</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./grade-calculator.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Grade Calculator</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
  <span class="menu-text">Course Materials</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -181,22 +193,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#course-description" id="toc-course-description" class="nav-link active" data-scroll-target="#course-description">Course Description</a></li>
-  <li><a href="#intended-learning-outcomes" id="toc-intended-learning-outcomes" class="nav-link" data-scroll-target="#intended-learning-outcomes">Intended Learning Outcomes</a></li>
-  <li><a href="#class-details" id="toc-class-details" class="nav-link" data-scroll-target="#class-details">Class Details</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course-overview.html">Course Overview</a></li><li class="breadcrumb-item"><a href="./course-overview.html">Course Overview</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course-overview.html">Course Overview</a></li><li class="breadcrumb-item"><a href="./grade-calculator.html">Grade Calculator</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">OMIS-482: Predictive Business Analytics With Machine Learning</h1>
+<h1 class="title">Grade Calculator</h1>
 </div>
 
 
@@ -213,40 +217,140 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="course-description" class="level2">
-<h2 class="anchored" data-anchor-id="course-description">Course Description</h2>
-<p>Study of advanced topics in predictive business analytics. Topics include data manipulations, data visualizations, and data modeling. Emphasis is on using and mastering powerful predictive analytics software such as R.</p>
-</section>
-<section id="intended-learning-outcomes" class="level2">
-<h2 class="anchored" data-anchor-id="intended-learning-outcomes">Intended Learning Outcomes</h2>
-<p>Students enrolled in this class are expected to learn and efficiently code without supervision. Moreover, they will learn how to apply predictive modelling techniques with machine learning on case studies to see the important real-world implications of predictive analytics in business.</p>
-</section>
-<section id="class-details" class="level2">
-<h2 class="anchored" data-anchor-id="class-details">Class Details</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Meeting</th>
-<th>Location</th>
-<th>Time</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Week’s First Class</td>
-<td>Barsema Hall 333</td>
-<td>Tuesday 9:30 - 10:45 pm</td>
-</tr>
-<tr class="even">
-<td>Week’s Second Class</td>
-<td>Barsema Hall 333</td>
-<td>Thursday 9:30 - 10:45 pm</td>
-</tr>
-</tbody>
-</table>
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| viewerHeight: 600
+
+library(shiny)
+library(bslib)
+
+# Define UI for the application
+ui &lt;- fluidPage(
+  titlePanel("Welcome to Grade Calculator"),
+  p("This will help you project your final grade based on your current/predicted scores."),
+  sidebarLayout(
+    sidebarPanel(
+      h4("Enter your grades (between 0 and 100):"),
+      fluidRow(
+        column(6, numericInput("grade1", "Practice 1:", value = 85, min = 0, max = 100, step = 1)),
+        column(6, numericInput("grade2", "RStudio Skill Test 1:", value = 85, min = 0, max = 100, step = 1)),
+        column(6, numericInput("grade3", "RStudio Skill Test 2:", value = 85, min = 0, max = 100, step = 1)),
+        column(6, numericInput("grade4", "Exam 1:", value = 85, min = 0, max = 100, step = 1)),
+        column(6, numericInput("grade5", "Practice 2:", value = 85, min = 0, max = 100, step = 1)),
+        column(6, numericInput("grade6", "Exam 2:", value = 85, min = 0, max = 100, step = 1)),
+        column(6, numericInput("grade7", "RStudio Skill Test 3:", value = 85, min = 0, max = 100, step = 1)),
+        column(6, numericInput("grade8", "Final Exam:", value = 85, min = 0, max = 100, step = 1)),
+        column(6, numericInput("grade9", "Participation:", value = 85, min = 0, max = 100, step = 1))
+      )
+    ),
+    mainPanel(
+      h3("Your Results"),
+      h4("Based on the scores you entered, your Final Grade is:"),
+      uiOutput("finalGrade"),
+      h4("Based on the scores you entered, your Letter Grade is:"),
+      uiOutput("letterGrade"),
+      h4("Feedback:"),
+      uiOutput("feedback")
+    )
+  )
+)
+
+# Define server logic for the application
+server &lt;- function(input, output, session) {
+  # Reactive expression to calculate the final grade
+  finalGrade &lt;- reactive({
+    # Weightages for the grades
+    weightages &lt;- c(0.05, 0.10, 0.10, 0.12, 0.05, 0.15, 0.15, 0.18, 0.10)
+    
+    # Ensure all inputs are within range
+    grades &lt;- c(input$grade1, input$grade2, input$grade3, input$grade4, input$grade5,
+                input$grade6, input$grade7, input$grade8, input$grade9)
+    grades &lt;- pmax(pmin(grades, 100), 0)
+    
+    # Calculate the final grade
+    grade &lt;- sum(grades * weightages)
+    
+    # Return the final grade rounded to two decimal places
+    round(grade, 2)
+  })
+  
+  output$finalGrade &lt;- renderUI({
+    grade &lt;- finalGrade()
+    if (grade &gt;= 92) {
+      span(grade, style = "color: green; font-size: 24px;")
+    } else if (grade &gt;= 89.5) {
+      span(grade, style = "color: lightgreen; font-size: 24px;")
+    } else if (grade &gt;= 87) {
+      span(grade, style = "color: yellowgreen; font-size: 24px;")
+    } else if (grade &gt;= 82) {
+      span(grade, style = "color: pink; font-size: 24px;")
+    } else if (grade &gt;= 79.5) {
+      span(grade, style = "color: orange; font-size: 24px;")
+    } else if (grade &gt;= 77) {
+      span(grade, style = "color: orangered; font-size: 24px;")
+    } else if (grade &gt;= 69.5) {
+      span(grade, style = "color: red; font-size: 24px;")
+    } else if (grade &gt;= 59.5) {
+      span(grade, style = "color: darkred; font-size: 24px;")
+    } else {
+      span(grade, style = "color: darkred; font-size: 24px;")
+    }
+  })
+  
+  # Determine the letter grade based on the final grade
+  output$letterGrade &lt;- renderUI({
+    grade &lt;- finalGrade()
+    
+    if (grade &gt;= 92) {
+      span("A", style = "color: green; font-size: 24px;")
+    } else if (grade &gt;= 89.5) {
+      span("A-", style = "color: lightgreen; font-size: 24px;")
+    } else if (grade &gt;= 87) {
+      span("B+", style = "color: yellowgreen; font-size: 24px;")
+    } else if (grade &gt;= 82) {
+      span("B", style = "color: pink; font-size: 24px;")
+    } else if (grade &gt;= 79.5) {
+      span("B-", style = "color: orange; font-size: 24px;")
+    } else if (grade &gt;= 77) {
+      span("C+", style = "color: orangered; font-size: 24px;")
+    } else if (grade &gt;= 69.5) {
+      span("C", style = "color: red; font-size: 24px;")
+    } else if (grade &gt;= 59.5) {
+      span("D", style = "color: darkred; font-size: 24px;")
+    } else {
+      span("F", style = "color: darkred; font-size: 24px;")
+    }
+  })
+
+  # Provide feedback based on the final grade
+  output$feedback &lt;- renderUI({
+    grade &lt;- finalGrade()
+    
+    if (grade &gt;= 92) {
+      span("Good job! Keep it up.", style = "color: green; font-size: 20px;")
+    } else if (grade &gt;= 89.5) {
+      span("You are almost there! Great effort.", style = "color: lightgreen; font-size: 20px;")
+    } else if (grade &gt;= 87) {
+      span("Well done! You’re on the right track.", style = "color: yellowgreen; font-size: 20px;")
+    } else if (grade &gt;= 82) {
+      span("Good work! Continue to improve.", style = "color: pink; font-size: 20px;")
+    } else if (grade &gt;= 79.5) {
+      span("You’re doing well, but there’s room for improvement.", style = "color: orange; font-size: 20px;")
+    } else if (grade &gt;= 77) {
+      span("Keep trying, you can do better.", style = "color: orangered; font-size: 20px;")
+    } else if (grade &gt;= 69.5) {
+      span("You’re making progress, but consider extra help.", style = "color: red; font-size: 20px;")
+    } else if (grade &gt;= 59.5) {
+      span("You need to improve significantly.", style = "color: darkred; font-size: 20px;")
+    } else {
+      span("Failing grade. Seek additional support.", style = "color: darkred; font-size: 20px;")
+    }
+  })
+}
+
+# Run the application 
+shinyApp(ui = ui, server = server)</code></pre>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -428,7 +532,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -460,37 +575,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/vineelnekkanti\.github\.io\/OMIS-482-FA24\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -815,10 +908,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./useful-links.html" class="pagination-link" aria-label="Useful Links">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Useful Links</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./index.html" class="pagination-link" aria-label="Faculty">
-        <span class="nav-page-text">Faculty</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./in_class.html" class="pagination-link" aria-label="In-class &amp; Weekly">
+        <span class="nav-page-text">In-class &amp; Weekly</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

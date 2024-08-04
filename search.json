@@ -1,5 +1,49 @@
 [
   {
+    "objectID": "course-overview.html",
+    "href": "course-overview.html",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
+    "section": "",
+    "text": "Study of advanced topics in predictive business analytics. Topics include data manipulations, data visualizations, and data modeling. Emphasis is on using and mastering powerful predictive analytics software such as R.",
+    "crumbs": [
+      "Course Overview",
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "course-overview.html#course-description",
+    "href": "course-overview.html#course-description",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
+    "section": "",
+    "text": "Study of advanced topics in predictive business analytics. Topics include data manipulations, data visualizations, and data modeling. Emphasis is on using and mastering powerful predictive analytics software such as R.",
+    "crumbs": [
+      "Course Overview",
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "course-overview.html#intended-learning-outcomes",
+    "href": "course-overview.html#intended-learning-outcomes",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
+    "section": "Intended Learning Outcomes",
+    "text": "Intended Learning Outcomes\nStudents enrolled in this class are expected to learn and efficiently code without supervision. Moreover, they will learn how to apply predictive modelling techniques with machine learning on case studies to see the important real-world implications of predictive analytics in business.",
+    "crumbs": [
+      "Course Overview",
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "course-overview.html#class-details",
+    "href": "course-overview.html#class-details",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
+    "section": "Class Details",
+    "text": "Class Details\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nWeek’s First Class\nBarsema Hall 333\nTuesday 9:30 - 10:45 pm\n\n\nWeek’s Second Class\nBarsema Hall 333\nThursday 9:30 - 10:45 pm",
+    "crumbs": [
+      "Course Overview",
+      "Course Overview"
+    ]
+  },
+  {
     "objectID": "useful-links.html",
     "href": "useful-links.html",
     "title": "Useful links",
@@ -26,7 +70,7 @@
     "href": "useful-links.html#about-r-packages",
     "title": "Useful links",
     "section": "About R Packages",
-    "text": "About R Packages\n\n\n\nPackage\nSource\n\n\n\n\ntidyr\ndplyr.tidyverse.org\n\n\nggplot2\nggplot2.tidyverse.org",
+    "text": "About R Packages\n\n\n\nPackage\nSource\n\n\n\n\ndplyr\ndplyr.tidyverse.org\n\n\nggplot2\nggplot2.tidyverse.org",
     "crumbs": [
       "Course Overview",
       "Useful Links"
@@ -81,7 +125,7 @@
     "href": "index.html#teaching-assistant",
     "title": "Faculty",
     "section": "Teaching Assistant",
-    "text": "Teaching Assistant\nVenkata Surya Vineel Nekkanti",
+    "text": "Teaching Assistant\n\nVenkata Surya Vineel Nekkanti - Venkata (a.k.a. Vineel) is currently pursuing a graduate degree in Management Information Systems at Northern Illinois University. With five years of experience, he has held various roles focused on process improvements through data analysis and leveraging DevOps technologies within the BFSI sector in the NAM region. He has a strong interest in the intersection where business meets technology.\nBeyond his academic pursuits, he is a devoted Sci-Fi enthusiast, enjoying both books and movies in the genre, besides George R.R. Martin’s world of fantasy. He also loves to play badminton.",
     "crumbs": [
       "Course Overview",
       "Faculty"
@@ -96,28 +140,6 @@
     "crumbs": [
       "Course Overview",
       "Faculty"
-    ]
-  },
-  {
-    "objectID": "course-overview.html",
-    "href": "course-overview.html",
-    "title": "Course overview",
-    "section": "",
-    "text": "OMIS-482 Predictive Business Analytics Machine Learning: THE CONTENT ABOUT THE COURSE GOES HERE",
-    "crumbs": [
-      "Course Overview",
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "course-overview.html#class-details",
-    "href": "course-overview.html#class-details",
-    "title": "Course overview",
-    "section": "Class Details",
-    "text": "Class Details\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nWeek’s First Class\nBarsema Hall 333\nTuesday 9:30 - 10:45 pm\n\n\nWeek’s Second Class\nBarsema Hall 333\nThursday 9:30 - 10:45 pm",
-    "crumbs": [
-      "Course Overview",
-      "Course Overview"
     ]
   },
   {
