@@ -31,8 +31,6 @@ website:
           text: Dr.B's Leaderboard
         - href: useful-links.qmd
           text: Useful Links
-        - href: grade-calculator.qmd
-          text: Grade Calculator
       - section: "Course Materials"
         contents:
         - href: in_class.qmd
@@ -57,8 +55,6 @@ format:
     css: styles.css
   
 execute:
-  before: |
-    Rscript -e "if (!require('shinylive')) install.packages('shinylive', repos = 'http://cran.us.r-project.org')"
   freeze: auto
 
 editor: visual
