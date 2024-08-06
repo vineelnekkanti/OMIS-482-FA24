@@ -70,7 +70,7 @@
     "href": "useful-links.html#about-r-packages",
     "title": "Useful links",
     "section": "About R Packages",
-    "text": "About R Packages\n\n\n\nPackage\nSource\n\n\n\n\ndplyr\ndplyr.tidyverse.org\n\n\nggplot2\nggplot2.tidyverse.org",
+    "text": "About R Packages\n\n\n\nPackage\nSource\n\n\n\n\nData Manipulation\ndplyr.tidyverse.org\n\n\nData Visualization\nggplot2.tidyverse.org\n\n\nData Modeling\nwww.tidymodels.org/packages",
     "crumbs": [
       "Course Overview",
       "Useful Links"
@@ -103,7 +103,7 @@
     "href": "index.html",
     "title": "Faculty",
     "section": "",
-    "text": "Dr. B - Dr. B’s teaching and research interests embrace information systems, data analytics, artificial intelligence, creators’ economy, systems beyond firms control and customer service.\nHe’s a tidyverse certified instructor trainer, teaches coding workshops globally, introducing students to the tidyverse. Passionate about teaching and research, he involves students in open-source software projects. Experiences in diverse teams contribute to his academic and personal growth.\nHe also co-hosts The Gateway podcast, launched in 2021, aimed at exposing students to technology trends and topics, accessible online on major podcasting platforms.",
+    "text": "Dr. Biagio Palese - Dr. Biagio Palese’s (a.k.a. Dr. B) teaching and research interests embrace information systems, data analytics, artificial intelligence, creators’ economy, systems beyond firms control and customer service.\nHe’s a tidyverse certified instructor trainer, teaches coding workshops globally, introducing students to the tidyverse. Passionate about teaching and research, he involves students in open-source software projects. Experiences in diverse teams contribute to his academic and personal growth.\nHe also co-hosts The Gateway podcast, launched in 2021, aimed at exposing students to technology trends and topics, accessible online on major podcasting platforms.",
     "crumbs": [
       "Course Overview",
       "Faculty"
@@ -114,7 +114,7 @@
     "href": "index.html#instructor",
     "title": "Faculty",
     "section": "",
-    "text": "Dr. B - Dr. B’s teaching and research interests embrace information systems, data analytics, artificial intelligence, creators’ economy, systems beyond firms control and customer service.\nHe’s a tidyverse certified instructor trainer, teaches coding workshops globally, introducing students to the tidyverse. Passionate about teaching and research, he involves students in open-source software projects. Experiences in diverse teams contribute to his academic and personal growth.\nHe also co-hosts The Gateway podcast, launched in 2021, aimed at exposing students to technology trends and topics, accessible online on major podcasting platforms.",
+    "text": "Dr. Biagio Palese - Dr. Biagio Palese’s (a.k.a. Dr. B) teaching and research interests embrace information systems, data analytics, artificial intelligence, creators’ economy, systems beyond firms control and customer service.\nHe’s a tidyverse certified instructor trainer, teaches coding workshops globally, introducing students to the tidyverse. Passionate about teaching and research, he involves students in open-source software projects. Experiences in diverse teams contribute to his academic and personal growth.\nHe also co-hosts The Gateway podcast, launched in 2021, aimed at exposing students to technology trends and topics, accessible online on major podcasting platforms.",
     "crumbs": [
       "Course Overview",
       "Faculty"
