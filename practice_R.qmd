@@ -4,6 +4,17 @@ filters:
   - webr
 ---
 
+
+```{r, echo=FALSE, results='asis'}
+# Inject JavaScript to check authentication status and redirect if necessary
+cat(htmltools::HTML('<script>
+if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>'))
+
+```
+
 This interface helps you to improve your R skills. Here you can access to a data set called `starwars`
 
 ::: {.callout-tip}

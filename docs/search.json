@@ -1,24 +1,79 @@
 [
   {
-    "objectID": "course-overview.html",
-    "href": "course-overview.html",
-    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
+    "objectID": "useful-links.html",
+    "href": "useful-links.html",
+    "title": "Useful links",
     "section": "",
-    "text": "Study of advanced topics in predictive business analytics. Topics include data manipulations, data visualizations, and data modeling. Emphasis is on using and mastering powerful predictive analytics software such as R.",
+    "text": "Download and install R 4.2.1: https://cran.r-project.org/\nDownload and install the preview build of RStudio: https://posit.co/download/rstudio-desktop/",
     "crumbs": [
       "Course Overview",
-      "Course Overview"
+      "Useful Links"
     ]
   },
   {
-    "objectID": "course-overview.html#class-details",
-    "href": "course-overview.html#class-details",
-    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
-    "section": "Class Details",
-    "text": "Class Details\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nWeek’s First Class\nBarsema Hall 333\nTuesday 9:30 - 10:45 pm\n\n\nWeek’s Second Class\nBarsema Hall 333\nThursday 9:30 - 10:45 pm",
+    "objectID": "useful-links.html#install-r-and-rstudio",
+    "href": "useful-links.html#install-r-and-rstudio",
+    "title": "Useful links",
+    "section": "",
+    "text": "Download and install R 4.2.1: https://cran.r-project.org/\nDownload and install the preview build of RStudio: https://posit.co/download/rstudio-desktop/",
     "crumbs": [
       "Course Overview",
-      "Course Overview"
+      "Useful Links"
+    ]
+  },
+  {
+    "objectID": "useful-links.html#about-r-packages",
+    "href": "useful-links.html#about-r-packages",
+    "title": "Useful links",
+    "section": "About R Packages",
+    "text": "About R Packages\n\n\n\nPackage\nSource\n\n\n\n\nData Manipulation\ndplyr.tidyverse.org\n\n\nData Visualization\nggplot2.tidyverse.org\n\n\nData Modeling\nwww.tidymodels.org/packages",
+    "crumbs": [
+      "Course Overview",
+      "Useful Links"
+    ]
+  },
+  {
+    "objectID": "useful-links.html#cheat-sheets",
+    "href": "useful-links.html#cheat-sheets",
+    "title": "Useful links",
+    "section": "Cheat Sheets",
+    "text": "Cheat Sheets\n\nRStudio IDE Cheatsheet: https://rstudio.github.io/cheatsheets/rstudio-ide.pdf\nData transformation with dplyr Cheatsheet: https://rstudio.github.io/cheatsheets/data-transformation.pdf\nData Visualization with ggplot2: https://rstudio.github.io/cheatsheets/data-visualization.pdf",
+    "crumbs": [
+      "Course Overview",
+      "Useful Links"
+    ]
+  },
+  {
+    "objectID": "useful-links.html#office-hours",
+    "href": "useful-links.html#office-hours",
+    "title": "Useful links",
+    "section": "Office Hours",
+    "text": "Office Hours\n\n\n\nInstructor\nBooking URL\n\n\n\n\nDr. Biagio Palese\nBook Here\n\n\nVenkata Nekkanti\nBook Here\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nWhen booking office hours, double-check the name of the staff member you want to book the office hours with using the “Select Staff” dropdown.",
+    "crumbs": [
+      "Course Overview",
+      "Useful Links"
+    ]
+  },
+  {
+    "objectID": "practice_R.html",
+    "href": "practice_R.html",
+    "title": "R Practice",
+    "section": "",
+    "text": "This interface helps you to improve your R skills. Here you can access to a data set called starwars",
+    "crumbs": [
+      "Course Materials",
+      "Practice R"
+    ]
+  },
+  {
+    "objectID": "practice_R.html#use-pipes",
+    "href": "practice_R.html#use-pipes",
+    "title": "R Practice",
+    "section": "Use Pipes",
+    "text": "Use Pipes\n\n\n\n\n\n\nNote:\n\n\n\nYou may not be able to use a pipe on this website. So you can copy it from here |&gt;\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Course Materials",
+      "Practice R"
     ]
   },
   {
@@ -26,7 +81,7 @@
     "href": "index.html",
     "title": "Faculty",
     "section": "",
-    "text": "Dr. B - Dr. B’s teaching and research interests embrace information systems, data analytics, artificial intelligence, creators’ economy, systems beyond firms control and customer service.\nHe’s a tidyverse certified instructor trainer, teaches coding workshops globally, introducing students to the tidyverse. Passionate about teaching and research, he involves students in open-source software projects. Experiences in diverse teams contribute to his academic and personal growth.\nHe also co-hosts The Gateway podcast, launched in 2021, aimed at exposing students to technology trends and topics, accessible online on major podcasting platforms.",
+    "text": "Dr. Biagio Palese - Dr. Biagio Palese’s (a.k.a. Dr. B) teaching and research interests embrace information systems, data analytics, artificial intelligence, creators’ economy, systems beyond firms control and customer service.\nHe’s a tidyverse certified instructor trainer, teaches coding workshops globally, introducing students to the tidyverse. Passionate about teaching and research, he involves students in open-source software projects. Experiences in diverse teams contribute to his academic and personal growth.\nHe also co-hosts The Gateway podcast, launched in 2021, aimed at exposing students to technology trends and topics, accessible online on major podcasting platforms.",
     "crumbs": [
       "Course Overview",
       "Faculty"
@@ -37,7 +92,7 @@
     "href": "index.html#instructor",
     "title": "Faculty",
     "section": "",
-    "text": "Dr. B - Dr. B’s teaching and research interests embrace information systems, data analytics, artificial intelligence, creators’ economy, systems beyond firms control and customer service.\nHe’s a tidyverse certified instructor trainer, teaches coding workshops globally, introducing students to the tidyverse. Passionate about teaching and research, he involves students in open-source software projects. Experiences in diverse teams contribute to his academic and personal growth.\nHe also co-hosts The Gateway podcast, launched in 2021, aimed at exposing students to technology trends and topics, accessible online on major podcasting platforms.",
+    "text": "Dr. Biagio Palese - Dr. Biagio Palese’s (a.k.a. Dr. B) teaching and research interests embrace information systems, data analytics, artificial intelligence, creators’ economy, systems beyond firms control and customer service.\nHe’s a tidyverse certified instructor trainer, teaches coding workshops globally, introducing students to the tidyverse. Passionate about teaching and research, he involves students in open-source software projects. Experiences in diverse teams contribute to his academic and personal growth.\nHe also co-hosts The Gateway podcast, launched in 2021, aimed at exposing students to technology trends and topics, accessible online on major podcasting platforms.",
     "crumbs": [
       "Course Overview",
       "Faculty"
@@ -66,102 +121,54 @@
     ]
   },
   {
-    "objectID": "student-dashboard.html",
-    "href": "student-dashboard.html",
-    "title": "Dr. B’s Leaderboard",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "import { Select } from \"@observablehq/inputs\";\nviewof tableSelector = Select([\"Overall Participation Score\", \"Weekly Activity\", \"In-Class Participation\", \"Teams Participation\", \"Professionalism\", \"Others(Surveys/Polls/Technology tests etc)\"], {label: \"Choose a category:\"})",
-    "crumbs": [
-      "Course Overview",
-      "Dr.B's Leaderboard"
-    ]
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "student-dashboard.html#section",
-    "href": "student-dashboard.html#section",
-    "title": "Dr. B’s Leaderboard",
+    "objectID": "course-overview.html",
+    "href": "course-overview.html",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
     "section": "",
-    "text": "html`&lt;div id=\"table-container\" style=\"overflow-x:auto; max-width: 100%;\"&gt;&lt;/div&gt;`\n\n\n\n\n\n\n\n{\n  const selectedTable = tableSelector;\n  let tableHTML;\n\n  if (selectedTable === \"Overall Participation Score\") {\n    tableHTML = final_overall_performance_table_html;\n  } else if (selectedTable === \"Weekly Activity\") {\n    tableHTML = final_weekly_activity_table_html;\n  } else if (selectedTable === \"In-Class Participation\") {\n    tableHTML = final_inclass_participation_table_html;\n  } else if (selectedTable === \"Teams Participation\") {\n    tableHTML = final_teams_participation_table_html;\n  } else if (selectedTable === \"Professionalism\") {\n    tableHTML = final_professionalism_table_html;\n  } else if (selectedTable === \"Others(Surveys/Polls/Technology tests etc)\") {\n    tableHTML = final_survey_test_table_html;\n  } else {\n    tableHTML = final_overall_performance_table_html;\n  }\n\n  document.getElementById(\"table-container\").innerHTML = tableHTML;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nStay positive! Your scores fluctuate throughout the semester depending on your performance. Monitor your progress and work consistently to maintain a good academic standing. All the best!",
+    "text": "Study of advanced topics in predictive business analytics. Topics include data manipulations, data visualizations, and data modeling. Emphasis is on using and mastering powerful predictive analytics software such as R.",
     "crumbs": [
       "Course Overview",
-      "Dr.B's Leaderboard"
+      "Course Overview"
     ]
   },
   {
-    "objectID": "practice_R.html",
-    "href": "practice_R.html",
-    "title": "R Practice",
+    "objectID": "course-overview.html#course-description",
+    "href": "course-overview.html#course-description",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
     "section": "",
-    "text": "This interface helps you to improve your R skills. Here you can access to a data set called starwars",
-    "crumbs": [
-      "Course Materials",
-      "Practice R"
-    ]
-  },
-  {
-    "objectID": "practice_R.html#use-pipes",
-    "href": "practice_R.html#use-pipes",
-    "title": "R Practice",
-    "section": "Use Pipes",
-    "text": "Use Pipes\n\n\n\n\n\n\nNote:\n\n\n\nYou may not be able to use a pipe on this website. So you can copy it from here |&gt;\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
-    "crumbs": [
-      "Course Materials",
-      "Practice R"
-    ]
-  },
-  {
-    "objectID": "useful-links.html",
-    "href": "useful-links.html",
-    "title": "Useful links",
-    "section": "",
-    "text": "Download and install R 4.2.1: https://cran.r-project.org/\nDownload and install the preview build of RStudio: https://posit.co/download/rstudio-desktop/",
+    "text": "Study of advanced topics in predictive business analytics. Topics include data manipulations, data visualizations, and data modeling. Emphasis is on using and mastering powerful predictive analytics software such as R.",
     "crumbs": [
       "Course Overview",
-      "Useful Links"
+      "Course Overview"
     ]
   },
   {
-    "objectID": "useful-links.html#install-r-and-rstudio",
-    "href": "useful-links.html#install-r-and-rstudio",
-    "title": "Useful links",
-    "section": "",
-    "text": "Download and install R 4.2.1: https://cran.r-project.org/\nDownload and install the preview build of RStudio: https://posit.co/download/rstudio-desktop/",
+    "objectID": "course-overview.html#intended-learning-outcomes",
+    "href": "course-overview.html#intended-learning-outcomes",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
+    "section": "Intended Learning Outcomes",
+    "text": "Intended Learning Outcomes\nStudents enrolled in this class are expected to learn and efficiently code without supervision. Moreover, they will learn how to apply predictive modelling techniques with machine learning on case studies to see the important real-world implications of predictive analytics in business.",
     "crumbs": [
       "Course Overview",
-      "Useful Links"
+      "Course Overview"
     ]
   },
   {
-    "objectID": "useful-links.html#about-r-packages",
-    "href": "useful-links.html#about-r-packages",
-    "title": "Useful links",
-    "section": "About R Packages",
-    "text": "About R Packages\n\n\n\nPackage\nSource\n\n\n\n\ndplyr\ndplyr.tidyverse.org\n\n\nggplot2\nggplot2.tidyverse.org",
+    "objectID": "course-overview.html#class-details",
+    "href": "course-overview.html#class-details",
+    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
+    "section": "Class Details",
+    "text": "Class Details\n\n\n\nMeeting\nLocation\nTime\n\n\n\n\nWeek’s First Class\nBarsema Hall 333\nTuesday 9:30 - 10:45 pm\n\n\nWeek’s Second Class\nBarsema Hall 333\nThursday 9:30 - 10:45 pm",
     "crumbs": [
       "Course Overview",
-      "Useful Links"
-    ]
-  },
-  {
-    "objectID": "useful-links.html#cheat-sheets",
-    "href": "useful-links.html#cheat-sheets",
-    "title": "Useful links",
-    "section": "Cheat Sheets",
-    "text": "Cheat Sheets\n\nRStudio IDE Cheatsheet: https://rstudio.github.io/cheatsheets/rstudio-ide.pdf\nData transformation with dplyr Cheatsheet: https://rstudio.github.io/cheatsheets/data-transformation.pdf\nData Visualization with ggplot2: https://rstudio.github.io/cheatsheets/data-visualization.pdf",
-    "crumbs": [
-      "Course Overview",
-      "Useful Links"
-    ]
-  },
-  {
-    "objectID": "useful-links.html#office-hours",
-    "href": "useful-links.html#office-hours",
-    "title": "Useful links",
-    "section": "Office Hours",
-    "text": "Office Hours\n\n\n\nInstructor\nBooking URL\n\n\n\n\nDr. Biagio Palese\nBook Here\n\n\nVenkata Nekkanti\nBook Here\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nWhen booking office hours, double-check the name of the staff member you want to book the office hours with using the “Select Staff” dropdown.",
-    "crumbs": [
-      "Course Overview",
-      "Useful Links"
+      "Course Overview"
     ]
   },
   {
@@ -198,36 +205,25 @@
     ]
   },
   {
-    "objectID": "grade-calculator.html",
-    "href": "grade-calculator.html",
-    "title": "Grade Calculator",
+    "objectID": "student-dashboard.html",
+    "href": "student-dashboard.html",
+    "title": "Dr. B’s Leaderboard",
     "section": "",
-    "text": "#| standalone: true\n#| viewerHeight: 600\n\nlibrary(shiny)\nlibrary(bslib)\n\n# Define UI for the application\nui &lt;- fluidPage(\n  titlePanel(\"Welcome to Grade Calculator\"),\n  p(\"This will help you project your final grade based on your current/predicted scores.\"),\n  sidebarLayout(\n    sidebarPanel(\n      h4(\"Enter your grades (between 0 and 100):\"),\n      fluidRow(\n        column(6, numericInput(\"grade1\", \"Practice 1:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade2\", \"RStudio Skill Test 1:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade3\", \"RStudio Skill Test 2:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade4\", \"Exam 1:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade5\", \"Practice 2:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade6\", \"Exam 2:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade7\", \"RStudio Skill Test 3:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade8\", \"Final Exam:\", value = 85, min = 0, max = 100, step = 1)),\n        column(6, numericInput(\"grade9\", \"Participation:\", value = 85, min = 0, max = 100, step = 1))\n      )\n    ),\n    mainPanel(\n      h3(\"Your Results\"),\n      h4(\"Based on the scores you entered, your Final Grade is:\"),\n      uiOutput(\"finalGrade\"),\n      h4(\"Based on the scores you entered, your Letter Grade is:\"),\n      uiOutput(\"letterGrade\"),\n      h4(\"Feedback:\"),\n      uiOutput(\"feedback\")\n    )\n  )\n)\n\n# Define server logic for the application\nserver &lt;- function(input, output, session) {\n  # Reactive expression to calculate the final grade\n  finalGrade &lt;- reactive({\n    # Weightages for the grades\n    weightages &lt;- c(0.05, 0.10, 0.10, 0.12, 0.05, 0.15, 0.15, 0.18, 0.10)\n    \n    # Ensure all inputs are within range\n    grades &lt;- c(input$grade1, input$grade2, input$grade3, input$grade4, input$grade5,\n                input$grade6, input$grade7, input$grade8, input$grade9)\n    grades &lt;- pmax(pmin(grades, 100), 0)\n    \n    # Calculate the final grade\n    grade &lt;- sum(grades * weightages)\n    \n    # Return the final grade rounded to two decimal places\n    round(grade, 2)\n  })\n  \n  output$finalGrade &lt;- renderUI({\n    grade &lt;- finalGrade()\n    if (grade &gt;= 92) {\n      span(grade, style = \"color: green; font-size: 24px;\")\n    } else if (grade &gt;= 89.5) {\n      span(grade, style = \"color: lightgreen; font-size: 24px;\")\n    } else if (grade &gt;= 87) {\n      span(grade, style = \"color: yellowgreen; font-size: 24px;\")\n    } else if (grade &gt;= 82) {\n      span(grade, style = \"color: pink; font-size: 24px;\")\n    } else if (grade &gt;= 79.5) {\n      span(grade, style = \"color: orange; font-size: 24px;\")\n    } else if (grade &gt;= 77) {\n      span(grade, style = \"color: orangered; font-size: 24px;\")\n    } else if (grade &gt;= 69.5) {\n      span(grade, style = \"color: red; font-size: 24px;\")\n    } else if (grade &gt;= 59.5) {\n      span(grade, style = \"color: darkred; font-size: 24px;\")\n    } else {\n      span(grade, style = \"color: darkred; font-size: 24px;\")\n    }\n  })\n  \n  # Determine the letter grade based on the final grade\n  output$letterGrade &lt;- renderUI({\n    grade &lt;- finalGrade()\n    \n    if (grade &gt;= 92) {\n      span(\"A\", style = \"color: green; font-size: 24px;\")\n    } else if (grade &gt;= 89.5) {\n      span(\"A-\", style = \"color: lightgreen; font-size: 24px;\")\n    } else if (grade &gt;= 87) {\n      span(\"B+\", style = \"color: yellowgreen; font-size: 24px;\")\n    } else if (grade &gt;= 82) {\n      span(\"B\", style = \"color: pink; font-size: 24px;\")\n    } else if (grade &gt;= 79.5) {\n      span(\"B-\", style = \"color: orange; font-size: 24px;\")\n    } else if (grade &gt;= 77) {\n      span(\"C+\", style = \"color: orangered; font-size: 24px;\")\n    } else if (grade &gt;= 69.5) {\n      span(\"C\", style = \"color: red; font-size: 24px;\")\n    } else if (grade &gt;= 59.5) {\n      span(\"D\", style = \"color: darkred; font-size: 24px;\")\n    } else {\n      span(\"F\", style = \"color: darkred; font-size: 24px;\")\n    }\n  })\n\n  # Provide feedback based on the final grade\n  output$feedback &lt;- renderUI({\n    grade &lt;- finalGrade()\n    \n    if (grade &gt;= 92) {\n      span(\"Good job! Keep it up.\", style = \"color: green; font-size: 20px;\")\n    } else if (grade &gt;= 89.5) {\n      span(\"You are almost there! Great effort.\", style = \"color: lightgreen; font-size: 20px;\")\n    } else if (grade &gt;= 87) {\n      span(\"Well done! You’re on the right track.\", style = \"color: yellowgreen; font-size: 20px;\")\n    } else if (grade &gt;= 82) {\n      span(\"Good work! Continue to improve.\", style = \"color: pink; font-size: 20px;\")\n    } else if (grade &gt;= 79.5) {\n      span(\"You’re doing well, but there’s room for improvement.\", style = \"color: orange; font-size: 20px;\")\n    } else if (grade &gt;= 77) {\n      span(\"Keep trying, you can do better.\", style = \"color: orangered; font-size: 20px;\")\n    } else if (grade &gt;= 69.5) {\n      span(\"You’re making progress, but consider extra help.\", style = \"color: red; font-size: 20px;\")\n    } else if (grade &gt;= 59.5) {\n      span(\"You need to improve significantly.\", style = \"color: darkred; font-size: 20px;\")\n    } else {\n      span(\"Failing grade. Seek additional support.\", style = \"color: darkred; font-size: 20px;\")\n    }\n  })\n}\n\n# Run the application \nshinyApp(ui = ui, server = server)",
+    "text": "import { Select } from \"@observablehq/inputs\";\nviewof tableSelector = Select([\"Overall Participation Score\", \"Weekly Activity\", \"In-Class Participation\", \"Teams Participation\", \"Professionalism\", \"Others(Surveys/Polls/Technology tests etc)\"], {label: \"Choose a category:\"})",
     "crumbs": [
       "Course Overview",
-      "Grade Calculator"
+      "Dr.B's Leaderboard"
     ]
   },
   {
-    "objectID": "course-overview.html#course-description",
-    "href": "course-overview.html#course-description",
-    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
+    "objectID": "student-dashboard.html#section",
+    "href": "student-dashboard.html#section",
+    "title": "Dr. B’s Leaderboard",
     "section": "",
-    "text": "Study of advanced topics in predictive business analytics. Topics include data manipulations, data visualizations, and data modeling. Emphasis is on using and mastering powerful predictive analytics software such as R.",
+    "text": "html`&lt;div id=\"table-container\" style=\"overflow-x:auto; max-width: 100%;\"&gt;&lt;/div&gt;`\n\n\n\n\n\n\n\n{\n  const selectedTable = tableSelector;\n  let tableHTML;\n\n  if (selectedTable === \"Overall Participation Score\") {\n    tableHTML = final_overall_performance_table_html;\n  } else if (selectedTable === \"Weekly Activity\") {\n    tableHTML = final_weekly_activity_table_html;\n  } else if (selectedTable === \"In-Class Participation\") {\n    tableHTML = final_inclass_participation_table_html;\n  } else if (selectedTable === \"Teams Participation\") {\n    tableHTML = final_teams_participation_table_html;\n  } else if (selectedTable === \"Professionalism\") {\n    tableHTML = final_professionalism_table_html;\n  } else if (selectedTable === \"Others(Surveys/Polls/Technology tests etc)\") {\n    tableHTML = final_survey_test_table_html;\n  } else {\n    tableHTML = final_overall_performance_table_html;\n  }\n\n  document.getElementById(\"table-container\").innerHTML = tableHTML;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nStay positive! Your scores fluctuate throughout the semester depending on your performance. Monitor your progress and work consistently to maintain a good academic standing. All the best!",
     "crumbs": [
       "Course Overview",
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "course-overview.html#intended-learning-outcomes",
-    "href": "course-overview.html#intended-learning-outcomes",
-    "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
-    "section": "Intended Learning Outcomes",
-    "text": "Intended Learning Outcomes\nStudents enrolled in this class are expected to learn and efficiently code without supervision. Moreover, they will learn how to apply predictive modelling techniques with machine learning on case studies to see the important real-world implications of predictive analytics in business.",
-    "crumbs": [
-      "Course Overview",
-      "Course Overview"
+      "Dr.B's Leaderboard"
     ]
   }
 ]

@@ -2,14 +2,29 @@ project:
   type: website
   output-dir: docs
 website:
+  announcement: 
+    icon: megaphone
+    dismissable: false
+    content: "Hello Class! Welcome to OMIS-482! I hope you guys have a wonderful semester & All the Best!! -**Dr.B** "
+    type: primary
+    position: below-navbar
   page-navigation: true
-  title: "OMIS-681"
   page-footer:
     background: "#343a40"
     right: "Created by: Venkata Surya Vineel Nekkanti"
     left: "&copy; Copyright 2024, Dr. B"
     center: "For Further Queries: bpalese@niu.edu"
-
+  favicon: "images/logo_2.png"
+    
+  #navbar:
+    #background: "#343a40"
+    #title: "OMIS-482: Predictive Business Analytics With Machine Learning"
+    #pinned: true
+   # align: centre
+    #tools:
+    #    - icon: backpack-fill
+    #      text: "Blackboard"
+    #      url: https://webcourses.niu.edu/ultra/courses/_348339_1/outline
   sidebar:
     background: "#343a40" 
     logo: "images/logo_2.png"
@@ -37,10 +52,6 @@ website:
           text: In-class & Weekly
         - href: practice_R.qmd
           text: Practice R
-    tools:
-        - icon: backpack-fill
-          text: "Blackboard"
-          url: https://webcourses.niu.edu/ultra/courses/_348339_1/outline
 
 
 format:

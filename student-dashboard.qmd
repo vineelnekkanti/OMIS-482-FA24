@@ -2,7 +2,18 @@
 title: "Dr. B's Leaderboard"
 format: html
 ojs: true
+date: last-modified
 ---
+
+```{r, echo=FALSE, results='asis'}
+# Inject JavaScript to check authentication status and redirect if necessary
+cat(htmltools::HTML('<script>
+if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>'))
+
+```
 
 ```{r, Calling the packages}
 #| include: false
@@ -95,7 +106,6 @@ final_overall_performance_table <- modified_data |>
 
 ```
 
-
 ```{r, Create gt tables}
 #| include: false
 #| echo: false
@@ -147,7 +157,10 @@ final_inclass_participation_table_gt <- final_inclass_participation_table  |>
   ) |> 
   tab_header(
     title = md("**In-Class Participation**")
-  ) |> 
+  ) |>
+  tab_footnote(
+    footnote = "The scores tend to change based on your performance along the semester."
+  ) |>
   cols_width(
     everything() ~ px(100)  # Adjust the width as needed
   ) |> 
@@ -166,6 +179,9 @@ final_teams_participation_table_gt <- final_teams_participation_table  |>
   tab_header(
     title = md("**Teams Participation**")
   ) |> 
+  tab_footnote(
+    footnote = "The scores tend to change based on your performance along the semester."
+  ) |>
   cols_width(
     everything() ~ px(100)  # Adjust the width as needed
   ) |> 
@@ -183,7 +199,10 @@ final_professionalism_table_gt <- final_professionalism_table  |>
   ) |> 
   tab_header(
     title = md("**Professionalism**")
-  ) |> 
+  ) |>
+  tab_footnote(
+    footnote = "The scores tend to change based on your performance along the semester."
+  ) |>
   cols_width(
     everything() ~ px(100)  # Adjust the width as needed
   ) |> 
@@ -202,6 +221,9 @@ final_overall_performance_table_gt <- final_overall_performance_table  |>
   tab_header(
     title = md("**Overall Participation Score**")
   )  |> 
+  tab_footnote(
+    footnote = "The scores tend to change based on your performance along the semester."
+  ) |>
   cols_width(
     everything() ~ px(100)  # Adjust the width as needed
   ) |> 
@@ -224,7 +246,6 @@ final_professionalism_table_html <- as.character(as_raw_html(final_professionali
 final_overall_performance_table_html <- as.character(as_raw_html(final_overall_performance_table_gt))
 
 ```
-
 
 ```{r, Pass data to OJS}
 #| include: false
@@ -270,7 +291,7 @@ html`<div id="table-container" style="overflow-x:auto; max-width: 100%;"></div>`
 
 ```
 
-::: {.callout-tip}
+::: callout-tip
 ## Tip
 
 Stay positive! Your scores fluctuate throughout the semester depending on your performance. Monitor your progress and work consistently to maintain a good academic standing. All the best!
