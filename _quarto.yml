@@ -15,6 +15,12 @@ website:
     left: "&copy; Copyright 2024, Dr. B"
     center: "For Further Queries: bpalese@niu.edu"
   favicon: "images/logo_2.png"
+  cookie-consent:
+    type: implied
+    style: interstitial
+    palette: light
+  google-analytics:
+    tracking-id: "G-DRJBM9ZKMY"
     
   #navbar:
     #background: "#343a40"
@@ -48,10 +54,32 @@ website:
           text: Useful Links
       - section: "Course Materials"
         contents:
+          - section: "Week 1"
+            contents:
+            - href: week1_materials_starter.qmd
+              text: In-class Material
+            - href: week1_materials_starter.qmd
+              text: Weekly Activity
+          - section: "Week 2"
+            contents:
+            - href: week1_materials_starter.qmd
+              text: In-class Material
+            - href: week1_materials_starter.qmd
+              text: Weekly Activity
+          - section: "Week 3"
+            contents:
+            - href: week1_materials_starter.qmd
+              text: In-class Material
+            - href: week1_materials_starter.qmd
+              text: Weekly Activity              
+      - section: "Backup Content"
+        contents:
         - href: in_class.qmd
           text: In-class & Weekly
         - href: practice_R.qmd
-          text: Practice R
+          text: Practice R with WebR
+        - href: practice_R_with_quarto-live.qmd
+          text: Practice R with Quarto-Live
 
 
 format:
