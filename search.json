@@ -1,5 +1,126 @@
 [
   {
+    "objectID": "practice_R.html",
+    "href": "practice_R.html",
+    "title": "R Practice",
+    "section": "",
+    "text": "This interface helps you to improve your R skills. Here you can access to a data set called starwars",
+    "crumbs": [
+      "Backup Content",
+      "Practice R with WebR"
+    ]
+  },
+  {
+    "objectID": "practice_R.html#use-pipes",
+    "href": "practice_R.html#use-pipes",
+    "title": "R Practice",
+    "section": "Use Pipes",
+    "text": "Use Pipes\n\n\n\n\n\n\nNote:\n\n\n\nYou may not be able to use a pipe on this website. So you can copy it from here |&gt;\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Backup Content",
+      "Practice R with WebR"
+    ]
+  },
+  {
+    "objectID": "student-dashboard.html",
+    "href": "student-dashboard.html",
+    "title": "Dr. B’s Leaderboard",
+    "section": "",
+    "text": "import { Select } from \"@observablehq/inputs\";\nviewof tableSelector = Select([\"Overall Participation Score\", \"Weekly Activity\", \"In-Class Participation\", \"Teams Participation\", \"Professionalism\", \"Others(Surveys/Polls/Technology tests etc)\"], {label: \"Choose a category:\"})",
+    "crumbs": [
+      "Course Overview",
+      "Dr.B's Leaderboard"
+    ]
+  },
+  {
+    "objectID": "student-dashboard.html#section",
+    "href": "student-dashboard.html#section",
+    "title": "Dr. B’s Leaderboard",
+    "section": "",
+    "text": "html`&lt;div id=\"table-container\" style=\"overflow-x:auto; max-width: 100%;\"&gt;&lt;/div&gt;`\n\n\n\n\n\n\n\n{\n  const selectedTable = tableSelector;\n  let tableHTML;\n\n  if (selectedTable === \"Overall Participation Score\") {\n    tableHTML = final_overall_performance_table_html;\n  } else if (selectedTable === \"Weekly Activity\") {\n    tableHTML = final_weekly_activity_table_html;\n  } else if (selectedTable === \"In-Class Participation\") {\n    tableHTML = final_inclass_participation_table_html;\n  } else if (selectedTable === \"Teams Participation\") {\n    tableHTML = final_teams_participation_table_html;\n  } else if (selectedTable === \"Professionalism\") {\n    tableHTML = final_professionalism_table_html;\n  } else if (selectedTable === \"Others(Surveys/Polls/Technology tests etc)\") {\n    tableHTML = final_survey_test_table_html;\n  } else {\n    tableHTML = final_overall_performance_table_html;\n  }\n\n  document.getElementById(\"table-container\").innerHTML = tableHTML;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nStay positive! Your scores fluctuate throughout the semester depending on your performance. Monitor your progress and work consistently to maintain a good academic standing. All the best!",
+    "crumbs": [
+      "Course Overview",
+      "Dr.B's Leaderboard"
+    ]
+  },
+  {
+    "objectID": "week1_materials_starter.html",
+    "href": "week1_materials_starter.html",
+    "title": "Week1 materials",
+    "section": "",
+    "text": "The following sections of our book R for Data Science( first portion of the course book ) are included in the first week:\n\nIntroduction\nWorkflow basics\n\n\n\n\nInternal help: posit support\nExternal help: stackoverflow\nAdditional materials: posit resources\nCheat Sheets: posit cheat sheets\n\nWhile I use the book as a reference the materials provided to you are custom made and include more activities and resources. If you understand the materials covered in this document there is no need to refer to other sources. If you have any troubles with the materials don’t hesitate to contact me or check the above sources.",
+    "crumbs": [
+      "Course Materials",
+      "Week 1",
+      "In-class Material"
+    ]
+  },
+  {
+    "objectID": "week1_materials_starter.html#intro-to-r",
+    "href": "week1_materials_starter.html#intro-to-r",
+    "title": "Week1 materials",
+    "section": "",
+    "text": "The following sections of our book R for Data Science( first portion of the course book ) are included in the first week:\n\nIntroduction\nWorkflow basics\n\n\n\n\nInternal help: posit support\nExternal help: stackoverflow\nAdditional materials: posit resources\nCheat Sheets: posit cheat sheets\n\nWhile I use the book as a reference the materials provided to you are custom made and include more activities and resources. If you understand the materials covered in this document there is no need to refer to other sources. If you have any troubles with the materials don’t hesitate to contact me or check the above sources.",
+    "crumbs": [
+      "Course Materials",
+      "Week 1",
+      "In-class Material"
+    ]
+  },
+  {
+    "objectID": "week1_materials_starter.html#getting-started-aka-running-code-in-r",
+    "href": "week1_materials_starter.html#getting-started-aka-running-code-in-r",
+    "title": "Week1 materials",
+    "section": "Getting Started aka Running code in R",
+    "text": "Getting Started aka Running code in R\nTo run and execute code inside a code chunk simply click the Run Code button or make sure that your cursor is anywhere in the line that you want to execute and press Cmd(Mac)/Ctrl(Windows) + Enter to run a single line of code or highlight multiple line and then press Cmd/Ctrl + Enter. Let’s try with the below code\n\n\n\n\n\n\n\n\n\nPackages installation\nYou will need to install the packages first before be able to use functions and datasets they contain. This is a one time task unless you uninstall R& RStudio or you change your computer. We will need to install a few packages, among them the most important is tidyverse. Tidyverse is the main package for the first part of the semester, it is a bundle package (meaning it contains multiple packages that have different purposes e.g., dplyr for manipulations, ggplot for visualizations)\n\n\n\n\n\n\n\n\n\n\nLoad packages\nThis is a critical task. Every time you open a new RStudio session you will need to load the packages. Failing to do so will incur in the most common errors among beginners (e.g., function not found or object not found)\n\n\n\n\n\n\n\n\nTake careful note of the conflicts message that’s printed when you load the tidyverse. It tells you that dplyr overwrites some functions in base R. If you want to use the base version of these functions after loading dplyr, you’ll need to use their full names: stats::filter() and stats::lag().\n\n\nNeed help\nIf you are stuck promise me not to quit! You are a beginner so it will happen. Just pay attention to the error message and look at the below option to find a solution:\n\nlook into the R community or Stackoverflow\nleverage LLM (e.g., ChatGPT)\nuse help with R documentation (e.g., try ?mean below)\ncheck examples of how to use a certain function (e.g., try example(“mean”) below)\n\nNB During the exams you can only use the last two options so make sure you master them!",
+    "crumbs": [
+      "Course Materials",
+      "Week 1",
+      "In-class Material"
+    ]
+  },
+  {
+    "objectID": "week1_materials_starter.html#workflow-basic-script",
+    "href": "week1_materials_starter.html#workflow-basic-script",
+    "title": "Week1 materials",
+    "section": "Workflow basic script",
+    "text": "Workflow basic script\nYou can use R as a calculator..\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCreating Object using the Assignement operator\nBut it can do much more.. so we need to learn how to create and manage object using the assignment operator.\n\n\n\n\n\n\n\n\n&lt;- is the assign operator and it means you are assigning value to an object/variable. You can then call and use the object created later.\nThe shortcut option/alt + - will create the assign symbol\n\n\nHow to manage object?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow to name your objects?\nObject names must start with a letter, and can only contain letters, numbers, _ and .. You want your object names to be descriptive, so you’ll need a convention for multiple words.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNow let’s check your object creation understanding. Given the object below:\n\n\n\n\n\n\n\n\nWhat happen if I run the following lines; why?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity 1: Create objects by using the assignment operator (6 minutes) [write code just below each instruction; finally use Teams RStudio - Forum channel for help on the in-class activities/homework or if you have other questions]\n#a. An object named “today” that is equal to todays’ date\n\n\n\n\n\n\n\n\n#b. An object named “forty” that is equal to 6*5 +10\n\n\n\n\n\n\n\n\n#c. An object named “basic_sum” that is equal to 1+2+3+4+5\n\n\n\n\n\n\n\n\n#d. Write also the code to print the today object\n\n\n\n\n\n\n\n\n\n\n\nUsing functions\nFunctions are the real reason why you should use R. There are too many functions to go over or even try remember. In fact, each package will give you access to a different set of functions and sometimes they will use the same name (e.g., remember the conflict with the filter function above). However, the good news is that you don’t need to memorize them but understand how they work. Let’s start with a basic example, how can we create a sequence of numbers in R?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity 2: Use basic functions (8 minutes) [write code just below each instruction; finally use Teams RStudio - Forum channel for help on the in class activities/homework or if you have other questions]\n#a. Learn more about the sum function (hint: use the help feature covered today)\n\n\n\n\n\n\n\n\n#b. Use the sum function to compute the sum of all the numbers from 1 to 1000.\n\n\n\n\n\n\n\n\n#c. Assign the above function to an object named “my_first_function”\n\n\n\n\n\n\n\n\n#d. Print the object “my_first_function”",
+    "crumbs": [
+      "Course Materials",
+      "Week 1",
+      "In-class Material"
+    ]
+  },
+  {
+    "objectID": "practice_R_with_quarto-live.html",
+    "href": "practice_R_with_quarto-live.html",
+    "title": "R Practise",
+    "section": "",
+    "text": "This interface helps you to improve your R skills. Here you can access to a data set called starwars",
+    "crumbs": [
+      "Backup Content",
+      "Practice R with Quarto-Live"
+    ]
+  },
+  {
+    "objectID": "practice_R_with_quarto-live.html#use-pipes",
+    "href": "practice_R_with_quarto-live.html#use-pipes",
+    "title": "R Practise",
+    "section": "Use Pipes",
+    "text": "Use Pipes\n\n\n\n\n\n\nNote:\n\n\n\nIn order to use pipes, use Ctrl + Shift + M on windows (or) Cmd + Shift + M on Mac. If you are practicing from mobile, copy from here: |&gt;",
+    "crumbs": [
+      "Backup Content",
+      "Practice R with Quarto-Live"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
     "objectID": "course-overview.html",
     "href": "course-overview.html",
     "title": "OMIS-482: Predictive Business Analytics With Machine Learning",
@@ -99,6 +220,39 @@
     ]
   },
   {
+    "objectID": "in_class.html",
+    "href": "in_class.html",
+    "title": "One Stop for Materials",
+    "section": "",
+    "text": "Course Introduction & Getting Started: Access here\n\n\n\n\n\nBasic Manipulations: Access here\n\n\n\n\n\nIntermediate Manipulations: Access here\n\n\n\n\n\nManipulations Review: Access here\n\n\n\n\n\nBasic Visualizations: Access here\n\n\n\n\n\nIntermediate Visualizations: Access here",
+    "crumbs": [
+      "Backup Content",
+      "In-class & Weekly"
+    ]
+  },
+  {
+    "objectID": "in_class.html#in-class-materials",
+    "href": "in_class.html#in-class-materials",
+    "title": "One Stop for Materials",
+    "section": "",
+    "text": "Course Introduction & Getting Started: Access here\n\n\n\n\n\nBasic Manipulations: Access here\n\n\n\n\n\nIntermediate Manipulations: Access here\n\n\n\n\n\nManipulations Review: Access here\n\n\n\n\n\nBasic Visualizations: Access here\n\n\n\n\n\nIntermediate Visualizations: Access here",
+    "crumbs": [
+      "Backup Content",
+      "In-class & Weekly"
+    ]
+  },
+  {
+    "objectID": "in_class.html#weekly-activities",
+    "href": "in_class.html#weekly-activities",
+    "title": "One Stop for Materials",
+    "section": "Weekly Activities",
+    "text": "Weekly Activities\n\nActivity 1\n\nCourse Introduction & Getting Started: Access here\n\n\n\nActivity 2\n\nBasic Manipulations: Access here\n\n\n\nActivity 3\n\nIntermediate Manipulations: Access here\n\n\n\nActivity 4\n\nManipulations Review: Access here\n\n\n\nActivity 5\n\nBasic Visualizations: Access here\n\n\n\nActivity 6\n\nIntermediate Visualizations: Access here",
+    "crumbs": [
+      "Backup Content",
+      "In-class & Weekly"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Faculty",
@@ -140,90 +294,6 @@
     "crumbs": [
       "Course Overview",
       "Faculty"
-    ]
-  },
-  {
-    "objectID": "practice_R.html",
-    "href": "practice_R.html",
-    "title": "R Practice",
-    "section": "",
-    "text": "This interface helps you to improve your R skills. Here you can access to a data set called starwars",
-    "crumbs": [
-      "Course Materials",
-      "Practice R"
-    ]
-  },
-  {
-    "objectID": "practice_R.html#use-pipes",
-    "href": "practice_R.html#use-pipes",
-    "title": "R Practice",
-    "section": "Use Pipes",
-    "text": "Use Pipes\n\n\n\n\n\n\nNote:\n\n\n\nYou may not be able to use a pipe on this website. So you can copy it from here |&gt;\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
-    "crumbs": [
-      "Course Materials",
-      "Practice R"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "in_class.html",
-    "href": "in_class.html",
-    "title": "One Stop for Materials",
-    "section": "",
-    "text": "Course Introduction & Getting Started: Access here\n\n\n\n\n\nBasic Manipulations: Access here\n\n\n\n\n\nIntermediate Manipulations: Access here\n\n\n\n\n\nManipulations Review: Access here\n\n\n\n\n\nBasic Visualizations: Access here\n\n\n\n\n\nIntermediate Visualizations: Access here",
-    "crumbs": [
-      "Course Materials",
-      "In-class & Weekly"
-    ]
-  },
-  {
-    "objectID": "in_class.html#in-class-materials",
-    "href": "in_class.html#in-class-materials",
-    "title": "One Stop for Materials",
-    "section": "",
-    "text": "Course Introduction & Getting Started: Access here\n\n\n\n\n\nBasic Manipulations: Access here\n\n\n\n\n\nIntermediate Manipulations: Access here\n\n\n\n\n\nManipulations Review: Access here\n\n\n\n\n\nBasic Visualizations: Access here\n\n\n\n\n\nIntermediate Visualizations: Access here",
-    "crumbs": [
-      "Course Materials",
-      "In-class & Weekly"
-    ]
-  },
-  {
-    "objectID": "in_class.html#weekly-activities",
-    "href": "in_class.html#weekly-activities",
-    "title": "One Stop for Materials",
-    "section": "Weekly Activities",
-    "text": "Weekly Activities\n\nActivity 1\n\nCourse Introduction & Getting Started: Access here\n\n\n\nActivity 2\n\nBasic Manipulations: Access here\n\n\n\nActivity 3\n\nIntermediate Manipulations: Access here\n\n\n\nActivity 4\n\nManipulations Review: Access here\n\n\n\nActivity 5\n\nBasic Visualizations: Access here\n\n\n\nActivity 6\n\nIntermediate Visualizations: Access here",
-    "crumbs": [
-      "Course Materials",
-      "In-class & Weekly"
-    ]
-  },
-  {
-    "objectID": "student-dashboard.html",
-    "href": "student-dashboard.html",
-    "title": "Dr. B’s Leaderboard",
-    "section": "",
-    "text": "import { Select } from \"@observablehq/inputs\";\nviewof tableSelector = Select([\"Overall Participation Score\", \"Weekly Activity\", \"In-Class Participation\", \"Teams Participation\", \"Professionalism\", \"Others(Surveys/Polls/Technology tests etc)\"], {label: \"Choose a category:\"})",
-    "crumbs": [
-      "Course Overview",
-      "Dr.B's Leaderboard"
-    ]
-  },
-  {
-    "objectID": "student-dashboard.html#section",
-    "href": "student-dashboard.html#section",
-    "title": "Dr. B’s Leaderboard",
-    "section": "",
-    "text": "html`&lt;div id=\"table-container\" style=\"overflow-x:auto; max-width: 100%;\"&gt;&lt;/div&gt;`\n\n\n\n\n\n\n\n{\n  const selectedTable = tableSelector;\n  let tableHTML;\n\n  if (selectedTable === \"Overall Participation Score\") {\n    tableHTML = final_overall_performance_table_html;\n  } else if (selectedTable === \"Weekly Activity\") {\n    tableHTML = final_weekly_activity_table_html;\n  } else if (selectedTable === \"In-Class Participation\") {\n    tableHTML = final_inclass_participation_table_html;\n  } else if (selectedTable === \"Teams Participation\") {\n    tableHTML = final_teams_participation_table_html;\n  } else if (selectedTable === \"Professionalism\") {\n    tableHTML = final_professionalism_table_html;\n  } else if (selectedTable === \"Others(Surveys/Polls/Technology tests etc)\") {\n    tableHTML = final_survey_test_table_html;\n  } else {\n    tableHTML = final_overall_performance_table_html;\n  }\n\n  document.getElementById(\"table-container\").innerHTML = tableHTML;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nStay positive! Your scores fluctuate throughout the semester depending on your performance. Monitor your progress and work consistently to maintain a good academic standing. All the best!",
-    "crumbs": [
-      "Course Overview",
-      "Dr.B's Leaderboard"
     ]
   }
 ]

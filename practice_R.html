@@ -29,8 +29,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./practice_R_with_quarto-live.html" rel="next">
 <link href="./in_class.html" rel="prev">
 <link href="./images/logo_2.png" rel="icon" type="image/png">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,6 +72,33 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DRJBM9ZKMY"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-DRJBM9ZKMY', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"interstitial",
+  "consent_type":"implied",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs/editor/editor.main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   
@@ -359,7 +389,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"options":{"fig-width":7,"comment":"","read-only":"false","results":"markup","out-width":"700px","context":"interactive","output":"true","dpi":72,"editor-font-scale":"1","editor-word-wrap":"true","fig-cap":"","editor-max-height":"","message":"true","editor-quick-suggestions":"false","autorun":"false","classes":"","label":"unnamed-chunk-1","warning":"true","fig-height":5,"out-height":""},"code":"library(tidyverse)\n\n# Add here whatever packages you may wanted to add here for your practice."},{"id":2,"options":{"fig-width":7,"comment":"","read-only":"false","results":"markup","out-width":"700px","context":"interactive","output":"true","dpi":72,"editor-font-scale":"1","editor-word-wrap":"true","fig-cap":"","editor-max-height":"","message":"true","editor-quick-suggestions":"false","autorun":"false","classes":"","label":"unnamed-chunk-2","warning":"true","fig-height":5,"out-height":""},"code":"starwars"},{"id":3,"options":{"fig-width":7,"comment":"","read-only":"false","results":"markup","out-width":"700px","context":"interactive","output":"true","dpi":72,"editor-font-scale":"1","editor-word-wrap":"true","fig-cap":"","editor-max-height":"","message":"true","editor-quick-suggestions":"false","autorun":"false","classes":"","label":"unnamed-chunk-3","warning":"true","fig-height":5,"out-height":""},"code":""},{"id":4,"options":{"fig-width":7,"comment":"","read-only":"false","results":"markup","out-width":"700px","context":"interactive","output":"true","dpi":72,"editor-font-scale":"1","editor-word-wrap":"true","fig-cap":"","editor-max-height":"","message":"true","editor-quick-suggestions":"false","autorun":"false","classes":"","label":"unnamed-chunk-4","warning":"true","fig-height":5,"out-height":""},"code":""},{"id":5,"options":{"fig-width":7,"comment":"","read-only":"false","results":"markup","out-width":"700px","context":"interactive","output":"true","dpi":72,"editor-font-scale":"1","editor-word-wrap":"true","fig-cap":"","editor-max-height":"","message":"true","editor-quick-suggestions":"false","autorun":"false","classes":"","label":"unnamed-chunk-5","warning":"true","fig-height":5,"out-height":""},"code":""},{"id":6,"options":{"fig-width":7,"comment":"","read-only":"false","results":"markup","out-width":"700px","context":"interactive","output":"true","dpi":72,"editor-font-scale":"1","editor-word-wrap":"true","fig-cap":"","editor-max-height":"","message":"true","editor-quick-suggestions":"false","autorun":"false","classes":"","label":"unnamed-chunk-6","warning":"true","fig-height":5,"out-height":""},"code":""},{"id":7,"options":{"fig-width":7,"comment":"","read-only":"false","results":"markup","out-width":"700px","context":"interactive","output":"true","dpi":72,"editor-font-scale":"1","editor-word-wrap":"true","fig-cap":"","editor-max-height":"","message":"true","editor-quick-suggestions":"false","autorun":"false","classes":"","label":"unnamed-chunk-7","warning":"true","fig-height":5,"out-height":""},"code":"ggplot(data = starwars, aes(x = gender)) +\n  geom_bar(fill = \"darkgrey\")"},{"id":8,"options":{"fig-width":7,"comment":"","read-only":"false","results":"markup","out-width":"700px","context":"interactive","output":"true","dpi":72,"editor-font-scale":"1","editor-word-wrap":"true","fig-cap":"","editor-max-height":"","message":"true","editor-quick-suggestions":"false","autorun":"false","classes":"","label":"unnamed-chunk-8","warning":"true","fig-height":5,"out-height":""},"code":""},{"id":9,"options":{"fig-width":7,"comment":"","read-only":"false","results":"markup","out-width":"700px","context":"interactive","output":"true","dpi":72,"editor-font-scale":"1","editor-word-wrap":"true","fig-cap":"","editor-max-height":"","message":"true","editor-quick-suggestions":"false","autorun":"false","classes":"","label":"unnamed-chunk-9","warning":"true","fig-height":5,"out-height":""},"code":""},{"id":10,"options":{"fig-width":7,"comment":"","read-only":"false","results":"markup","out-width":"700px","context":"interactive","output":"true","dpi":72,"editor-font-scale":"1","editor-word-wrap":"true","fig-cap":"","editor-max-height":"","message":"true","editor-quick-suggestions":"false","autorun":"false","classes":"","label":"unnamed-chunk-10","warning":"true","fig-height":5,"out-height":""},"code":""}];
+globalThis.qwebrCellDetails = [{"id":1,"code":"library(tidyverse)\n\n# Add here whatever packages you may wanted to add here for your practice.","options":{"message":"true","editor-word-wrap":"true","output":"true","classes":"","editor-max-height":"","warning":"true","editor-quick-suggestions":"false","autorun":"false","context":"interactive","comment":"","out-height":"","fig-height":5,"read-only":"false","dpi":72,"out-width":"700px","editor-font-scale":"1","fig-cap":"","results":"markup","label":"unnamed-chunk-1","fig-width":7}},{"id":2,"code":"starwars","options":{"message":"true","editor-word-wrap":"true","output":"true","classes":"","editor-max-height":"","warning":"true","editor-quick-suggestions":"false","autorun":"false","context":"interactive","comment":"","out-height":"","fig-height":5,"read-only":"false","dpi":72,"out-width":"700px","editor-font-scale":"1","fig-cap":"","results":"markup","label":"unnamed-chunk-2","fig-width":7}},{"id":3,"code":"","options":{"message":"true","editor-word-wrap":"true","output":"true","classes":"","editor-max-height":"","warning":"true","editor-quick-suggestions":"false","autorun":"false","context":"interactive","comment":"","out-height":"","fig-height":5,"read-only":"false","dpi":72,"out-width":"700px","editor-font-scale":"1","fig-cap":"","results":"markup","label":"unnamed-chunk-3","fig-width":7}},{"id":4,"code":"","options":{"message":"true","editor-word-wrap":"true","output":"true","classes":"","editor-max-height":"","warning":"true","editor-quick-suggestions":"false","autorun":"false","context":"interactive","comment":"","out-height":"","fig-height":5,"read-only":"false","dpi":72,"out-width":"700px","editor-font-scale":"1","fig-cap":"","results":"markup","label":"unnamed-chunk-4","fig-width":7}},{"id":5,"code":"","options":{"message":"true","editor-word-wrap":"true","output":"true","classes":"","editor-max-height":"","warning":"true","editor-quick-suggestions":"false","autorun":"false","context":"interactive","comment":"","out-height":"","fig-height":5,"read-only":"false","dpi":72,"out-width":"700px","editor-font-scale":"1","fig-cap":"","results":"markup","label":"unnamed-chunk-5","fig-width":7}},{"id":6,"code":"","options":{"message":"true","editor-word-wrap":"true","output":"true","classes":"","editor-max-height":"","warning":"true","editor-quick-suggestions":"false","autorun":"false","context":"interactive","comment":"","out-height":"","fig-height":5,"read-only":"false","dpi":72,"out-width":"700px","editor-font-scale":"1","fig-cap":"","results":"markup","label":"unnamed-chunk-6","fig-width":7}},{"id":7,"code":"ggplot(data = starwars, aes(x = gender)) +\n  geom_bar(fill = \"darkgrey\")","options":{"message":"true","editor-word-wrap":"true","output":"true","classes":"","editor-max-height":"","warning":"true","editor-quick-suggestions":"false","autorun":"false","context":"interactive","comment":"","out-height":"","fig-height":5,"read-only":"false","dpi":72,"out-width":"700px","editor-font-scale":"1","fig-cap":"","results":"markup","label":"unnamed-chunk-7","fig-width":7}},{"id":8,"code":"","options":{"message":"true","editor-word-wrap":"true","output":"true","classes":"","editor-max-height":"","warning":"true","editor-quick-suggestions":"false","autorun":"false","context":"interactive","comment":"","out-height":"","fig-height":5,"read-only":"false","dpi":72,"out-width":"700px","editor-font-scale":"1","fig-cap":"","results":"markup","label":"unnamed-chunk-8","fig-width":7}},{"id":9,"code":"","options":{"message":"true","editor-word-wrap":"true","output":"true","classes":"","editor-max-height":"","warning":"true","editor-quick-suggestions":"false","autorun":"false","context":"interactive","comment":"","out-height":"","fig-height":5,"read-only":"false","dpi":72,"out-width":"700px","editor-font-scale":"1","fig-cap":"","results":"markup","label":"unnamed-chunk-9","fig-width":7}},{"id":10,"code":"","options":{"message":"true","editor-word-wrap":"true","output":"true","classes":"","editor-max-height":"","warning":"true","editor-quick-suggestions":"false","autorun":"false","context":"interactive","comment":"","out-height":"","fig-height":5,"read-only":"false","dpi":72,"out-width":"700px","editor-font-scale":"1","fig-cap":"","results":"markup","label":"unnamed-chunk-10","fig-width":7}}];
 
 </script>
 <script type="module">
@@ -1570,7 +1600,7 @@ globalThis.qwebrExecuteCode = async function (
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./in_class.html">Course Materials</a></li><li class="breadcrumb-item"><a href="./practice_R.html">Practice R</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./in_class.html">Backup Content</a></li><li class="breadcrumb-item"><a href="./practice_R.html">Practice R with WebR</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -1651,6 +1681,86 @@ globalThis.qwebrExecuteCode = async function (
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 1</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week1_materials_starter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">In-class Material</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week1_materials_starter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Weekly Activity</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 2</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week1_materials_starter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">In-class Material</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week1_materials_starter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Weekly Activity</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 3</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week1_materials_starter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">In-class Material</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week1_materials_starter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Weekly Activity</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Backup Content</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./in_class.html" class="sidebar-item-text sidebar-link">
@@ -1660,7 +1770,13 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./practice_R.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Practice R</span></a>
+ <span class="menu-text">Practice R with WebR</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./practice_R_with_quarto-live.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Practice R with Quarto-Live</span></a>
   </div>
 </li>
       </ul>
@@ -1971,7 +2087,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 }
 </script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./in_class.html">Course Materials</a></li><li class="breadcrumb-item"><a href="./practice_R.html">Practice R</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./in_class.html">Backup Content</a></li><li class="breadcrumb-item"><a href="./practice_R.html">Practice R with WebR</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">R Practice</h1>
 </div>
@@ -2645,6 +2761,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./practice_R_with_quarto-live.html" class="pagination-link" aria-label="Practice R with Quarto-Live">
+        <span class="nav-page-text">Practice R with Quarto-Live</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -2655,7 +2774,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 <p>For Further Queries: bpalese@niu.edu</p>
-</div>
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
 <p>Created by: Venkata Surya Vineel Nekkanti</p>
 </div>
